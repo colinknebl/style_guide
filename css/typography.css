@@ -1,0 +1,56 @@
+/* Headings */
+.ck-heading {
+	font-family: 'Martel', serif;
+	margin: 10px 0;
+}
+.ck-heading--uppercase {
+	text-transform: uppercase;
+}
+.ck-heading--light {
+	font-weight: 100;
+}
+.ck-heading--regular {
+	font-weight: 400;
+}
+.ck-heading--medium {
+	font-weight: 700;
+}
+.ck-heading--bold {
+	font-weight: 900;
+}
+
+/* Subheadings */
+.ck-subheading {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 20px 0;
+}
+.ck-subheading--light {
+	font-weight: 100;
+}
+.ck-subheading--regular {
+	font-weight: 400;
+}
+.ck-subheading--medium {
+	font-weight: 600;
+}
+.ck-subheading--bold {
+	font-weight: 900;
+}
+
+/* Text */
+.ck-text {
+	font-size: 16px;
+	line-height: 1.6;
+}
+.ck-text--light {
+	font-weight: 100;
+}
+.ck-text--regular {
+	font-weight: 300;
+}
+.ck-text--medium {
+	font-weight: 500;
+}
+.ck-text--bold {
+	font-weight: 700;
+}

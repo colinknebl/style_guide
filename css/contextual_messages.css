@@ -1,0 +1,47 @@
+/* Contextual Messages */
+.ck-context-message {
+	background: var(--secondary-color-15);
+	font-size: 1rem;
+	padding: 15px;
+	border-radius: var(--default-border-radius);
+}
+
+.ck-context-message--success {
+	background: var(--context-color-success);
+	color: var(--on-context-color-success);
+}
+
+.ck-context-message--success strong {
+	color: var(--on-context-color-success);
+	font-weight: 600;
+}
+
+.ck-context-message--informational {
+	background: var(--context-color-informational);
+	color: var(--on-context-color-informational);
+}
+
+.ck-context-message--informational strong {
+	color: var(--on-context-color-informational);
+	font-weight: 600;
+}
+
+.ck-context-message--warning {
+	background: var(--context-color-warning);
+	color: var(--on-context-color-warning);
+}
+
+.ck-context-message--warning strong {
+	color: var(--on-context-color-warning);
+	font-weight: 600;
+}
+
+.ck-context-message--danger {
+	background: var(--context-color-danger);
+	color: var(--on-context-color-danger);
+}
+
+.ck-context-message--danger strong {
+	color: var(--on-context-color-danger);
+	font-weight: 600;
+}
