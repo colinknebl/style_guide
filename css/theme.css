@@ -1,0 +1,574 @@
+/* Fonts from Google */
+@import url('https://fonts.googleapis.com/css?family=Satisfy|Martel:100,200,300,400,500,600,700,800,900|Ubuntu:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:100,200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+	/**/
+	--default-border-radius: 5px;
+
+	/* Colors */
+	--primary-color-1: white; /**/
+	--primary-color-1--hover: white; /**/
+
+	--primary-color-2: #222; /**/
+	--primary-color-2--hover: #333; /**/
+
+	--secondary-color-1: hsla(210, 100%, 12%, 1); /* Navy */
+	--secondary-color-1--hover: hsla(210, 100%, 75%, 1); /**/
+
+	--secondary-color-2: hsla(208, 100%, 43%, 1); /* Blue */
+	--secondary-color-2--hover: hsla(208, 100%, 85%, 1); /**/
+
+	--secondary-color-3: hsla(197, 100%, 75%, 1); /* Aqua */
+	--secondary-color-3--hover: hsla(197, 100%, 20%, 1); /**/
+
+	--secondary-color-4: hsla(180, 59%, 51%, 1); /* Teal */
+	--secondary-color-4--hover: hsla(0, 0%, 0%, 1); /**/
+
+	--secondary-color-5: hsla(154, 44%, 42%, 1); /* Olive */
+	--secondary-color-5--hover: hsla(152, 45%, 15%, 1); /**/
+
+	--secondary-color-6: hsla(127, 63%, 49%, 1); /* Green */
+	--secondary-color-6--hover: hsla(127, 65%, 15%, 1); /**/
+
+	--secondary-color-7: hsla(146, 100%, 50%, 1); /* Lime */
+	--secondary-color-7--hover: hsla(146, 100%, 20%, 1); /**/
+
+	--secondary-color-8: hsla(52, 100%, 50%, 1); /* Yellow */
+	--secondary-color-8--hover: hsla(52, 100%, 20%, 1); /**/
+
+	--secondary-color-9: hsla(28, 100%, 55%, 1); /* Orange */
+	--secondary-color-9--hover: hsla(28, 98%, 20%, 1); /**/
+
+	--secondary-color-10: hsla(3, 99%, 60%, 1); /* Red */
+	--secondary-color-10--hover: hsla(3, 100%, 25%, 1); /**/
+
+	--secondary-color-11: hsla(331, 74%, 30%, 1); /* Maroon */
+	--secondary-color-11--hover: hsla(331, 74%, 70%, 1); /**/
+
+	--secondary-color-12: hsla(313, 88%, 50%, 1); /* Fuchsia */
+	--secondary-color-12--hover: hsla(314, 91%, 21%, 1); /**/
+
+	--secondary-color-13: hsla(293, 89%, 42%, 1); /* Purple */
+	--secondary-color-13--hover: hsla(292, 87%, 82%, 1); /**/
+
+	--secondary-color-14: hsla(0, 0%, 67%, 1); /* Grey */
+	--secondary-color-14--hover: hsla(0, 0%, 0%, 1); /**/
+
+	--secondary-color-15: hsla(0, 0%, 87%, 1); /* Silver */
+	--secondary-color-15--hover: hsla(0, 0%, 0%, 1); /**/
+
+	--context-color-safety: hsla(208, 100%, 43%, 1); /**/
+	--context-color-safety--hover: hsla(208, 100%, 85%, 1); /**/
+
+	--context-color-success: hsla(103, 44%, 89%, 1); /**/
+	--context-color-success--hover: hsla(121, 32%, 25%, 1); /**/
+
+	--context-color-informational: hsla(200, 65%, 91%, 1);
+	--context-color-informational--hover: hsla(200, 50%, 27%, 1);
+
+	--context-color-warning: hsla(50, 81%, 94%, 1); /**/
+	--context-color-warning--hover: hsla(38, 40%, 29%, 1); /**/
+
+	--context-color-danger: hsla(3, 45%, 91%, 1); /**/
+	--context-color-danger--hover: hsla(1, 38%, 54%, 1); /**/
+
+	--context-color-error: rgba(229, 62, 53, 1); /**/
+	--context-color-error--hover: rgba(229, 62, 53, 0.7); /**/
+
+	/* Buttons */
+	--primary-button-color: var(--primary-color-1);
+	--primary-button-color--hover: var(--secondary-color-2);
+	--primary-button-background: var(--secondary-color-2);
+	--primary-button-background--hover: var(--secondary-color-2--hover);
+
+	--secondary-button-color: var(--primary-color-1);
+	--secondary-button-color--hover: var(--secondary-color-9);
+	--secondary-button-background: var(--secondary-color-9);
+	--secondary-button-background--hover: var(--secondary-color-9--hover);
+
+	--informational-button-color: var(--primary-color-1);
+	--informational-button-color--hover: var(--secondary-color-6);
+	--informational-button-background: var(--secondary-color-6);
+	--informational-button-background--hover: var(--secondary-color-6--hover);
+
+	--danger-button-color: var(--primary-color-1);
+	--danger-button-color--hover: var(--context-color-error);
+	--danger-button-background: var(--context-color-error);
+	--danger-button-background--hover: var(--context-color-error--hover);
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
+	outline-color: var(--context-color-safety);
+}
+
+/**
+ * Headings
+ */
+.ck-heading {
+	font-family: 'Martel', serif;
+	margin: 10px 0;
+}
+.ck-heading--uppercase {
+	text-transform: uppercase;
+}
+.ck-heading--light {
+	font-weight: 100;
+}
+.ck-heading--regular {
+	font-weight: 400;
+}
+.ck-heading--medium {
+	font-weight: 700;
+}
+.ck-heading--bold {
+	font-weight: 900;
+}
+
+/**
+ * Subheadings
+ */
+.ck-subheading {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 20px 0;
+}
+.ck-subheading--light {
+	font-weight: 100;
+}
+.ck-subheading--regular {
+	font-weight: 400;
+}
+.ck-subheading--medium {
+	font-weight: 600;
+}
+.ck-subheading--bold {
+	font-weight: 900;
+}
+
+/**
+ * Text
+ */
+
+.ck-text {
+	font-size: 16px;
+	line-height: 1.6;
+}
+.ck-text--light {
+	font-weight: 100;
+}
+.ck-text--regular {
+	font-weight: 300;
+}
+.ck-text--medium {
+	font-weight: 500;
+}
+.ck-text--bold {
+	font-weight: 700;
+}
+
+/* Buttons */
+.ck-button {
+	border: none;
+	background: none;
+	color: var(--secondary-color-2);
+	border-radius: var(--default-border-radius);
+	font-size: 1rem;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+}
+.ck-button:hover,
+.ck-button:active {
+	background: var(--secondary-color-2--hover);
+}
+
+.ck-button--medium {
+	padding: 10px 15px;
+}
+
+.ck-button--large {
+	padding: 15px 30px;
+}
+
+.ck-button--rounded {
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ck-button--icon {
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+}
+
+/* Text buttons */
+.ck-button--text {
+	border: none;
+}
+.ck-button--text.ck-button--primary {
+	background: none;
+	color: var(--primary-button-background);
+}
+.ck-button--text.ck-button--primary:hover {
+	background: var(--primary-button-background);
+	color: var(--primary-button-color);
+}
+
+.ck-button--text.ck-button--secondary {
+	background: none;
+	color: var(--secondary-button-background);
+}
+.ck-button--text.ck-button--secondary:hover {
+	background: var(--secondary-button-background);
+	color: var(--primary-color-1);
+}
+
+.ck-button--text.ck-button--informational {
+	background: none;
+	color: var(--informational-button-background);
+}
+.ck-button--text.ck-button--informational:hover {
+	background: var(--informational-button-background);
+	color: var(--informational-button-color);
+}
+
+.ck-button--text.ck-button--danger {
+	background: none;
+	color: var(--danger-button-background);
+}
+.ck-button--text.ck-button--danger:hover {
+	background: var(--danger-button-background);
+	color: var(--danger-button-color);
+}
+
+/* Outlined Buttons */
+.ck-button--outlined {
+	border: 1px solid var(--secondary-color-2);
+}
+
+.ck-button--outlined.ck-button--primary {
+	background: none;
+	color: var(--primary-button-background);
+}
+.ck-button--outlined.ck-button--primary:hover {
+	background: var(--primary-button-background);
+	color: var(--primary-button-color);
+}
+
+.ck-button--outlined.ck-button--secondary {
+	border: 1px solid var(--secondary-button-background);
+	background: none;
+	color: var(--secondary-button-background);
+}
+.ck-button--outlined.ck-button--secondary:hover {
+	background: var(--secondary-button-background);
+	color: var(--primary-color-1);
+}
+
+.ck-button--outlined.ck-button--informational {
+	border: 1px solid var(--informational-button-background);
+	background: none;
+	color: var(--informational-button-background);
+}
+.ck-button--outlined.ck-button--informational:hover {
+	background: var(--informational-button-background);
+	color: var(--informational-button-color);
+}
+
+.ck-button--outlined.ck-button--danger {
+	border: 1px solid var(--danger-button-background);
+	background: none;
+	color: var(--danger-button-background);
+}
+.ck-button--outlined.ck-button--danger:hover {
+	background: var(--danger-button-background);
+	color: var(--danger-button-color);
+}
+
+/* Unelevated & Raised */
+.ck-button--unelevated,
+.ck-button--raised {
+	color: var(--secondary-color-2);
+	background: var(--secondary-color-2--hover);
+}
+.ck-button--unelevated:hover,
+.ck-button--unelevated:active {
+	color: var(--primary-color-1);
+	background: var(--secondary-color-2);
+}
+
+.ck-button--unelevated.ck-button--primary {
+}
+.ck-button--unelevated.ck-button--primary:hover {
+}
+
+.ck-button--unelevated.ck-button--secondary {
+	color: var(--primary-color-1);
+}
+.ck-button--unelevated.ck-button--secondary:hover {
+	background: var(--secondary-button-background--hover);
+	color: var(--primary-color-1);
+}
+
+.ck-button--unelevated.ck-button--informational {
+	color: var(--primary-color-1);
+}
+.ck-button--unelevated.ck-button--informational:hover {
+	background: var(--informational-button-background--hover);
+	color: var(--informational-button-color);
+}
+
+.ck-button--unelevated.ck-button--danger {
+	color: var(--primary-color-1);
+}
+.ck-button--unelevated.ck-button--danger:hover {
+	background: var(--danger-button-background--hover);
+	color: var(--danger-button-color);
+}
+
+/* Raised Buttons */
+.ck-button--raised {
+	outline: none;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 1px 1px rgba(0, 0, 0, 0.11),
+		0 2px 2px rgba(0, 0, 0, 0.11), 0 3px 4px rgba(0, 0, 0, 0.11),
+		0 5px 10px rgba(0, 0, 0, 0.11);
+}
+.ck-button--raised:hover {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+		0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 12px rgba(0, 0, 0, 0.11),
+		0 12px 24px rgba(0, 0, 0, 0.11);
+}
+.ck-button--raised:active {
+	box-shadow: none;
+}
+
+.ck-button--raised.ck-button--primary:hover,
+.ck-button--raised.ck-button--primary:active {
+	background: var(--primary-button-background);
+	color: var(--primary-color-1);
+}
+
+.ck-button--raised.ck-button--secondary:hover,
+.ck-button--raised.ck-button--secondary:active {
+	background: var(--secondary-button-background);
+	color: var(--primary-color-1);
+}
+
+.ck-button--raised.ck-button--informational:hover,
+.ck-button--raised.ck-button--informational:active {
+	background: var(--informational-button-background);
+	color: var(--primary-color-1);
+}
+
+.ck-button--raised.ck-button--danger:hover,
+.ck-button--raised.ck-button--danger:active {
+	background: var(--danger-button-background);
+	color: var(--primary-color-1);
+}
+
+/* Primary Buttons */
+.ck-button--primary {
+	background: var(--primary-button-background);
+	color: var(--primary-button-color);
+}
+.ck-button--primary:hover {
+	background: var(--primary-button-background--hover);
+	color: var(--primary-button-color--hover);
+}
+
+/* Secondary Buttons */
+.ck-button--secondary {
+	background: var(--secondary-button-background);
+	color: var(--primary-color-1);
+}
+.ck-button--secondary:hover {
+	background: var(--secondary-button-background--hover);
+	color: var(--secondary-button-color--hover);
+}
+
+/* Informational Buttons */
+.ck-button--informational {
+	background: var(--informational-button-background);
+	color: var(--informational-button-color);
+}
+.ck-button--informational:hover {
+	background: var(--informational-button-background--hover);
+	color: var(--informational-button-color--hover);
+}
+
+/* Danger Buttons */
+.ck-button--danger {
+	background: var(--danger-button-background);
+	color: var(--danger-button-color);
+}
+.ck-button--danger:hover {
+	background: var(--danger-button-background--hover);
+	color: var(--danger-button-color--hover);
+}
+
+/* Form Elements */
+/* Inputs */
+.custom-input-container {
+	position: relative;
+}
+.custom-input-container input {
+	cursor: pointer;
+}
+
+.input-text-custom-placeholder-container {
+	position: relative;
+	width: 100%;
+}
+
+.input-text-placeholder--animated {
+	font-size: 16px;
+	display: inline-block;
+	color: var(--secondary-color-14);
+	position: absolute;
+	top: 7px;
+	left: 12px;
+	transform-origin: top left;
+	transition: transform 200ms ease-in-out;
+}
+input:valid + .input-text-placeholder--animated {
+	color: var(--primary-color-2);
+	transform: translate(-11px, -23px) scale(0.7);
+}
+
+.circle,
+.checkmark {
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	left: -3px;
+	height: 20px;
+	width: 20px;
+	background-color: var(--secondary-color-15);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-input-container:hover input ~ .circle,
+.custom-input-container:hover input ~ .checkmark {
+	background-color: var(--secondary-color-14);
+}
+
+.custom-input-container input:checked ~ .circle,
+.custom-input-container input:checked ~ .checkmark {
+	background-color: var(--secondary-color-4);
+}
+
+.circle:after,
+.checkmark:after {
+	content: '';
+	position: relative;
+	opacity: 0;
+	transition: opacity 100ms ease-in-out;
+}
+
+.custom-input-container input:focus ~ .circle,
+.custom-input-container input:focus ~ .checkmark {
+	outline-style: auto;
+	outline-color: var(--secondary-color-8);
+}
+
+.custom-input-container input:checked ~ .circle:after,
+.custom-input-container input:checked ~ .checkmark:after {
+	opacity: 1;
+}
+
+/* .custom-input-container .circle:after, */
+.custom-input-container .checkmark:after {
+	top: -1px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+.custom-input-container .circle:after {
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 50%;
+}
+input {
+	border: 2px solid var(--secondary-color-4);
+	outline-color: var(--secondary-color-8);
+}
+
+input[type='text'] {
+	width: 100%;
+	border-radius: var(--default-border-radius);
+	font-size: 1rem;
+	padding: 5px 10px;
+}
+
+label.input-text--underline input {
+	border: 2px solid transparent;
+	border-radius: initial;
+	border-bottom-color: var(--secondary-color-4);
+}
+
+.input-text--square input {
+	border-radius: initial;
+}
+
+/* Contextual Messages */
+.ck-context-message {
+	background: var(--secondary-color-15);
+	font-size: 1rem;
+	padding: 15px;
+	border-radius: var(--default-border-radius);
+}
+
+.ck-context-message--success {
+	background: var(--context-color-success);
+	color: var(--context-color-success--hover);
+}
+
+.ck-context-message--success strong {
+	color: var(--context-color-success--hover);
+	font-weight: 600;
+}
+
+.ck-context-message--informational {
+	background: var(--context-color-informational);
+	color: var(--context-color-informational--hover);
+}
+
+.ck-context-message--informational strong {
+	color: var(--context-color-informational--hover);
+	font-weight: 600;
+}
+
+.ck-context-message--warning {
+	background: var(--context-color-warning);
+	color: var(--context-color-warning--hover);
+}
+
+.ck-context-message--warning strong {
+	color: var(--context-color-warning--hover);
+	font-weight: 600;
+}
+
+.ck-context-message--danger {
+	background: var(--context-color-danger);
+	color: var(--context-color-danger--hover);
+}
+
+.ck-context-message--danger strong {
+	color: var(--context-color-danger--hover);
+	font-weight: 600;
+}

@@ -1,0 +1,388 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: whitesmoke;
+	display: grid;
+	padding: 20px;
+	font-size: 22px;
+}
+
+@media (min-width: 800px) {
+	body {
+		grid-template-columns: 200px 1fr;
+		padding: initial;
+	}
+
+	header {
+		position: sticky;
+		top: 0;
+		height: 100vh;
+	}
+
+	header div {
+		padding: 20px;
+	}
+
+	main {
+		border-radius: 20px;
+		background: white;
+		margin: 30px;
+		padding: 20px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+			0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+			0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+	}
+}
+
+header {
+	color: #333;
+}
+
+header h1 {
+	margin: 0 0 40px 0;
+	font-size: 1.5em;
+}
+
+header nav {
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header nav a li {
+	list-style-type: none;
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+header nav a li:hover {
+	text-decoration: underline;
+}
+
+.styleguide-section {
+	min-height: 400px;
+}
+
+.styleguide-section .styleguide-section-title {
+	font-weight: 300;
+	font-style: italic;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #333;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.styleguide-section-title:hover:before {
+	content: '#';
+	position: absolute;
+	font-size: 30px;
+	left: -15px;
+}
+
+.styleguide-section-content {
+}
+
+.styleguide-section-subsection {
+	margin: 60px 0;
+}
+
+.styleguide-section .styleguide-section-description,
+.styleguide-section-subsection .section-subsection-description {
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.section-subsection-title {
+	font-weight: 300;
+	text-align: center;
+	margin: 15px;
+}
+
+/* Typography Section */
+.styleguide-text-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.text-container-title {
+	font-size: 12px;
+	display: block;
+	text-align: center;
+}
+
+.text-container-list {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+.pairings-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.pairings-container div {
+	padding: 20px;
+	background: #222;
+	color: whitesmoke;
+}
+
+.pairings-container div h1,
+.pairings-container div h2 {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.pairings-container span {
+	font-size: 12px;
+}
+
+.hierarchy-examples-grid {
+	display: grid;
+	grid-gap: 40px;
+}
+
+.hierarchy-example {
+	background: #222;
+	color: whitesmoke;
+	text-align: left;
+	padding: 10px;
+}
+
+.hierarchy-example1 {
+	--heading-size: 50pt;
+
+	font-size: calc(var(--heading-size) * 0.25);
+	line-height: 1.6;
+	margin: 10px 0;
+}
+
+.hierarchy-example1 article {
+	margin-top: 15px;
+}
+
+.hierarchy-example2 {
+	--heading-size: 50pt;
+}
+
+.hierarchy-example2 .ck-heading {
+	font-size: var(--heading-size);
+}
+
+.hierarchy-example2 .ck-subheading {
+	font-size: calc(var(--heading-size) * 0.5);
+}
+
+.hierarchy-example2 article {
+	margin-top: 80px;
+}
+
+.hierarchy-example1 p,
+.hierarchy-example2 p {
+	font-size: calc(var(--heading-size) * 0.25);
+	line-height: 1.6;
+	margin: 10px 0;
+}
+
+/* Colors */
+.color {
+	min-height: 200px;
+}
+
+.colors-grid .label {
+	display: block;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+}
+
+.primary-colors-subsection .colors-grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 20px;
+}
+
+.primary-colors-subsection .color {
+	border: 1px solid black;
+}
+
+.primary-1 {
+	grid-column: 1 / 4;
+}
+
+.primary-1 .color {
+	background: var(--primary-color-1);
+}
+.primary-1 .color:hover {
+	background: var(--primary-color-1--hover);
+}
+
+.primary-2 {
+	grid-column: 4 / 7;
+	color: white;
+}
+
+.primary-2 .color {
+	background: var(--primary-color-2);
+}
+
+.secondary-colors-subsection .colors-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+}
+
+.secondary-colors-subsection .color-card .color {
+	transition: transform 200ms ease-in-out;
+}
+
+.secondary-colors-subsection .color-card .color:hover {
+	transform: scaleX(1.2);
+}
+.secondary-1 .color {
+	background: var(--secondary-color-1);
+}
+.secondary-1 .label {
+	color: var(--secondary-color-1--hover);
+}
+
+.secondary-2 .color {
+	background: var(--secondary-color-2);
+}
+.secondary-2 .label {
+	color: var(--secondary-color-2--hover);
+}
+
+.secondary-3 .color {
+	background: var(--secondary-color-3);
+}
+.secondary-3 .label {
+	color: var(--secondary-color-3--hover);
+}
+
+.secondary-4 .color {
+	background: var(--secondary-color-4);
+}
+.secondary-4 .label {
+	color: var(--secondary-color-4--hover);
+}
+
+.secondary-5 .color {
+	background: var(--secondary-color-5);
+}
+.secondary-5 .label {
+	color: var(--secondary-color-5--hover);
+}
+
+.secondary-6 .color {
+	background: var(--secondary-color-6);
+}
+.secondary-6 .label {
+	color: var(--secondary-color-6--hover);
+}
+
+.secondary-7 .color {
+	background: var(--secondary-color-7);
+}
+.secondary-7 .label {
+	color: var(--secondary-color-7--hover);
+}
+
+.secondary-8 .color {
+	background: var(--secondary-color-8);
+}
+.secondary-8 .label {
+	color: var(--secondary-color-8--hover);
+}
+
+.secondary-9 .color {
+	background: var(--secondary-color-9);
+}
+.secondary-9 .label {
+	color: var(--secondary-color-9--hover);
+}
+
+.secondary-10 .color {
+	background: var(--secondary-color-10);
+}
+.secondary-10 .label {
+	color: var(--secondary-color-10--hover);
+}
+
+.secondary-11 .color {
+	background: var(--secondary-color-11);
+}
+.secondary-11 .label {
+	color: var(--secondary-color-11--hover);
+}
+
+.secondary-12 .color {
+	background: var(--secondary-color-12);
+}
+.secondary-12 .label {
+	color: var(--secondary-color-12--hover);
+}
+
+.secondary-13 .color {
+	background: var(--secondary-color-13);
+}
+.secondary-13 .label {
+	color: var(--secondary-color-13--hover);
+}
+
+.secondary-14 .color {
+	background: var(--secondary-color-14);
+}
+.secondary-14 .label {
+	color: var(--secondary-color-14--hover);
+}
+
+.secondary-15 .color {
+	background: var(--secondary-color-15);
+}
+.secondary-15 .label {
+	color: var(--secondary-color-15--hover);
+}
+
+.safety-color-subsection .color {
+	background: var(--context-color-safety);
+}
+.safety-color-subsection .label {
+	color: var(--context-color-safety--hover);
+}
+
+/* Buttons */
+.styleguide-section-button .button-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	place-items: center;
+	grid-gap: 20px 10px;
+}
+
+/* Form Elements */
+.styleguide-section.form-elements label {
+	/* display: block;
+	margin: 10px; */
+}
+
+.input-container {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	grid-gap: 20px;
+}

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="BoxBook style guide" />
+		<meta name="author" content="Colin Knebl" />
+		<title>BoxBook Style Guide</title>
+
+		<!-- Normalize -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+
+		<!-- Site theme -->
+		<link rel="stylesheet" type="text/css" href="css/theme.css" />
+
+		<link rel="stylesheet" type="text/css" href="styleguide.css" />
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<h1><i>ck</i> Style Guide</h1>
+				<nav>
+					<ul>
+						<a href="#type"><li>Typography</li></a>
+						<a href="#colors"><li>Colors</li></a>
+						<a href="#buttons"><li>Buttons</li></a>
+						<a href="#form-elements"><li>Form Elements</li></a>
+						<a href="#contextual-messages"
+							><li>Contextual Messages</li></a
+						>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="styleguide-section">
+				<h2 id="type" class="styleguide-section-title">Typography</h2>
+				<div class="styleguide-section-content">
+					<div class="styleguide-section-subsection">
+						<h3 class="section-subsection-title">
+							Typeface
+						</h3>
+						<p class="ck-text section-subsection-description"></p>
+						<div class="styleguide-text-container">
+							<div class="text-container-column">
+								<span class="text-container-title"
+									>Martel, used for headings</span
+								>
+								<ul class="text-container-list">
+									<li>
+										<span
+											class="ck-heading ck-heading--light"
+											>Light</span
+										>
+									</li>
+									<li>
+										<span
+											class="ck-heading ck-heading--regular"
+											>Regular</span
+										>
+									</li>
+									<li>
+										<span
+											class="ck-heading ck-heading--medium"
+											>Medium</span
+										>
+									</li>
+									<li>
+										<span
+											class="ck-heading ck-heading--bold"
+											>Bold</span
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="text-container-column">
+								<span class="text-container-title"
+									>Source Sans Pro, used for everything
+									else</span
+								>
+
+								<ul class="text-container-list">
+									<li>
+										<span class="ck-text--light"
+											>Light</span
+										>
+									</li>
+									<li>
+										<span class="ck-text--regular"
+											>Regular</span
+										>
+									</li>
+									<li>
+										<span class="ck-text--medium"
+											>Medium</span
+										>
+									</li>
+									<li>
+										<span class="ck-text--bold">Bold</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="styleguide-section-subsection">
+						<h3 class="section-subsection-title">
+							Pairings
+						</h3>
+						<p class="ck-text section-subsection-description">
+							It is important to maintain these type pairings.
+							This allows for clarity, consistency, and a strong
+							hierarchy for all communications. Medium weight
+							should be paired with Light weight, and Bold weight
+							should be paired with Regular weight.
+						</p>
+						<div class="pairings-container">
+							<div>
+								<h1 class="ck-heading ck-heading--medium">
+									Medium
+								</h1>
+								<span>Heading</span>
+								<h2 class="ck-subheading ck-subheading--light">
+									Light
+								</h2>
+								<span>Subheading</span>
+							</div>
+							<div>
+								<h1 class="ck-heading ck-heading--bold">
+									Bold
+								</h1>
+								<span>Heading</span>
+								<h2
+									class="ck-subheading ck-subheading--regular"
+								>
+									Regular
+								</h2>
+								<span>Subheading</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="styleguide-section-subsection">
+						<h3 class="section-subsection-title">
+							Hierarchy
+						</h3>
+						<p class="ck-text section-subsection-description">
+							It is important to organize typography in a
+							hierarchical system according to relative importance
+							or inclusiveness through scale  and function
+							depending on communication.
+						</p>
+
+						<div class="hierarchy-examples-grid">
+							<div class="hierarchy-example hierarchy-example1">
+								<h1 class="ck-heading ck-">
+									This is the Heading
+								</h1>
+								<article class="">
+									<p class="">
+										This is the body text. It is 25% of the
+										size of the headline.
+									</p>
+									<p class="">
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Totam optio dolorem
+										iste non tenetur quos voluptatum iusto
+										perspiciatis eius quibusdam, rem
+										possimus? Laudantium fuga impedit
+										eveniet odio facilis, sint ullam.
+									</p>
+								</article>
+							</div>
+
+							<div class="hierarchy-example hierarchy-example2">
+								<h1 class="ck-heading ck-heading--medium">
+									This is a super cool headline
+								</h1>
+								<h2 class="ck-subheading ck-subheading--light">
+									This is the sub-heading and it is half the
+									size of the headline
+								</h2>
+								<article class="">
+									<p class="">
+										This is the body text. It is 25% of the
+										size of the headline.
+									</p>
+									<p class="">
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Totam optio dolorem
+										iste non tenetur quos voluptatum iusto
+										perspiciatis eius quibusdam, rem
+										possimus? Laudantium fuga impedit
+										eveniet odio facilis, sint ullam.
+									</p>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="styleguide-section">
+				<h2 id="colors" class="styleguide-section-title">Colors</h2>
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Primary Colors
+					</h3>
+					<p class="ck-text section-subsection-description">
+						Primary colors are white and black. They are used to
+						provide accessibility, simplicity, and consistency.
+					</p>
+					<div class="colors-grid">
+						<div class="color-card primary primary-1">
+							<span class="label">White</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card primary primary-2">
+							<span class="label">Black</span>
+							<div class="color"></div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="styleguide-section-subsection secondary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Secondary Colors
+					</h3>
+					<p class="ck-text section-subsection-description">
+						Secondary colors should be used sparingly throughout
+						illustration, photography, and product in order to
+						maintain meaning and potency.
+					</p>
+					<div class="colors-grid">
+						<div class="color-card secondary secondary-1">
+							<span class="label">Navy</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-2">
+							<span class="label">Blue</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-3">
+							<span class="label">Aqua</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-4">
+							<span class="label">Teal</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-5">
+							<span class="label">Olive</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-6">
+							<span class="label">Green</span>
+							<div class="color"></div>
+						</div>
+						<!--  -->
+						<div class="color-card secondary secondary-7">
+							<span class="label">Lime</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-8">
+							<span class="label">Yellow</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-9">
+							<span class="label">Orange</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-10">
+							<span class="label">Red</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-11">
+							<span class="label">Maroon</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-12">
+							<span class="label">Fuchsia</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-13">
+							<span class="label">Purple</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-14">
+							<span class="label">Gray</span>
+							<div class="color"></div>
+						</div>
+						<div class="color-card secondary secondary-15">
+							<span class="label">Silver</span>
+							<div class="color"></div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="styleguide-section-subsection safety-color-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Safety Color
+					</h3>
+					<p class="ck-text section-subsection-description">
+						Safety color should be used sparingly for moments of
+						support, assurance, and delight at moments of
+						interaction between a user and the product.
+					</p>
+					<div class="colors-grid">
+						<div class="color-card safety">
+							<span class="label">Safety Blue</span>
+							<div class="color"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="styleguide-section styleguide-section-button">
+				<h2 id="buttons" class="styleguide-section-title">Buttons</h2>
+				<p class="ck-text styleguide-section-description">
+					Buttons communicate an action a user can take. They are
+					typically placed throughout the UI, in places like dialogs,
+					forms, cards, and toolbars.
+				</p>
+				<div class="styleguide-section-subsection btn-text-subsection">
+					<h3 class="section-subsection-title">
+						Text
+					</h3>
+					<p class="ck-text section-subsection-description">
+						Buttons
+					</p>
+					<div class="button-grid">
+						<!-- row 1 -->
+						<button class="ck-button ck-button--text">
+							Default
+						</button>
+						<button
+							class="ck-button ck-button--medium  ck-button--text"
+						>
+							Medium
+						</button>
+						<button
+							class="ck-button ck-button--large ck-button--text"
+						>
+							Large
+						</button>
+						<!-- row 2 -->
+						<button
+							class="ck-button ck-button--rounded ck-button--text"
+						>
+							Rounded
+						</button>
+						<button
+							class="ck-button ck-button--icon ck-button--text"
+						>
+							IC
+						</button>
+						<button
+							class="ck-button ck-button--primary ck-button--text"
+						>
+							Primary
+						</button>
+						<!-- row 3 -->
+						<button
+							class="ck-button ck-button--danger ck-button--text"
+						>
+							Danger
+						</button>
+						<button
+							class="ck-button ck-button--secondary ck-button--text"
+						>
+							Secondary
+						</button>
+						<button
+							class="ck-button ck-button--informational ck-button--text"
+						>
+							Informational
+						</button>
+					</div>
+				</div>
+
+				<div
+					class="styleguide-section-subsection btn-outlined-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Outlined
+					</h3>
+					<p class="ck-text section-subsection-description">
+						Buttons
+					</p>
+					<div class="button-grid">
+						<!-- row 1 -->
+						<button class="ck-button ck-button--outlined">
+							Default
+						</button>
+						<button
+							class="ck-button ck-button--medium ck-button--outlined"
+						>
+							Medium
+						</button>
+						<button
+							class="ck-button ck-button--large ck-button--outlined"
+						>
+							Large
+						</button>
+						<!-- row 2 -->
+						<button
+							class="ck-button ck-button--rounded ck-button--outlined"
+						>
+							Rounded
+						</button>
+						<button
+							class="ck-button ck-button--icon ck-button--outlined"
+						>
+							IC
+						</button>
+						<button
+							class="ck-button ck-button--primary ck-button--outlined"
+						>
+							Primary
+						</button>
+						<!-- row 3 -->
+						<button
+							class="ck-button ck-button--danger ck-button--outlined"
+						>
+							Danger
+						</button>
+						<button
+							class="ck-button ck-button--secondary ck-button--outlined"
+						>
+							Secondary
+						</button>
+						<button
+							class="ck-button ck-button--informational ck-button--outlined"
+						>
+							Informational
+						</button>
+					</div>
+				</div>
+
+				<div
+					class="styleguide-section-subsection btn-unelevated-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Unelevated
+					</h3>
+					<p class="ck-text section-subsection-description">
+						Buttons
+					</p>
+					<div class="button-grid">
+						<!-- row 1 -->
+						<button class="ck-button ck-button--unelevated">
+							Default
+						</button>
+						<button
+							class="ck-button ck-button--medium ck-button--unelevated"
+						>
+							Medium
+						</button>
+						<button
+							class="ck-button ck-button--large ck-button--unelevated"
+						>
+							Large
+						</button>
+						<!-- row 2 -->
+						<button
+							class="ck-button ck-button--rounded ck-button--unelevated"
+						>
+							Rounded
+						</button>
+						<button
+							class="ck-button ck-button--icon ck-button--unelevated"
+						>
+							IC
+						</button>
+						<button
+							class="ck-button ck-button--primary ck-button--unelevated"
+						>
+							Primary
+						</button>
+						<!-- row 3 -->
+						<button
+							class="ck-button ck-button--danger ck-button--unelevated"
+						>
+							Danger
+						</button>
+						<button
+							class="ck-button ck-button--secondary ck-button--unelevated"
+						>
+							Secondary
+						</button>
+						<button
+							class="ck-button ck-button--informational ck-button--unelevated"
+						>
+							Informational
+						</button>
+					</div>
+				</div>
+
+				<div
+					class="styleguide-section-subsection btn-raised-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Raised
+					</h3>
+					<p class="ck-text section-subsection-description">
+						Buttons
+					</p>
+					<div class="button-grid">
+						<!-- row 1 -->
+						<button class="ck-button ck-button--raised">
+							Default
+						</button>
+						<button
+							class="ck-button ck-button--medium ck-button--raised"
+						>
+							Medium
+						</button>
+						<button
+							class="ck-button ck-button--large ck-button--raised"
+						>
+							Large
+						</button>
+						<!-- row 2 -->
+						<button
+							class="ck-button ck-button--rounded ck-button--raised"
+						>
+							Rounded
+						</button>
+						<button
+							class="ck-button ck-button--icon ck-button--raised"
+						>
+							IC
+						</button>
+						<button
+							class="ck-button ck-button--primary ck-button--raised"
+						>
+							Primary
+						</button>
+						<!-- row 3 -->
+						<button
+							class="ck-button ck-button--danger ck-button--raised"
+						>
+							Danger
+						</button>
+						<button
+							class="ck-button ck-button--secondary ck-button--raised"
+						>
+							Secondary
+						</button>
+						<button
+							class="ck-button ck-button--informational ck-button--raised"
+						>
+							Informational
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="styleguide-section form-elements">
+				<h2 id="form-elements" class="styleguide-section-title">
+					Form Elements
+				</h2>
+				<p class="ck-text styleguide-section-description">
+					Form Elements
+				</p>
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Inputs and Labels
+					</h3>
+					<div class="input-container">
+						<label class="input-text-custom-placeholder-container">
+							<input type="text" name="example-input" required />
+							<span class="input-text-placeholder--animated"
+								>Defalt</span
+							>
+						</label>
+						<label
+							class="input-text-custom-placeholder-container input-text--square"
+						>
+							<input type="text" name="example-input" required />
+							<span class="input-text-placeholder--animated"
+								>Square</span
+							>
+						</label>
+						<label
+							class="input-text-custom-placeholder-container input-text--underline"
+						>
+							<input type="text" name="example-input" required />
+							<span class="input-text-placeholder--animated"
+								>Bottom Border</span
+							>
+						</label>
+					</div>
+				</div>
+
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Checkboxes
+					</h3>
+					<div class="input-container">
+						<label class="custom-input-container"
+							><input type="checkbox" checked/><span
+								class="checkmark"
+							></span
+						></label>
+						<label class="custom-input-container"
+							><input type="checkbox"/><span
+								class="checkmark"
+							></span
+						></label>
+
+						<label class="custom-input-container"
+							><input type="checkbox"/><span
+								class="checkmark"
+							></span
+						></label>
+					</div>
+				</div>
+
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Radio Buttons
+					</h3>
+					<div class="input-container">
+						<label class="custom-input-container"
+							><input
+								type="radio"
+								name="example-radio-btn"
+								checked/><span class="circle"></span
+						></label>
+						<label class="custom-input-container"
+							><input type="radio" name="example-radio-btn"/><span
+								class="circle"
+							></span
+						></label>
+
+						<label class="custom-input-container"
+							><input type="radio" name="example-radio-btn"/><span
+								class="circle"
+							></span
+						></label>
+					</div>
+				</div>
+			</section>
+
+			<section class="styleguide-section">
+				<h2 id="contextual-messages" class="styleguide-section-title">
+					Contextual Messages
+				</h2>
+				<p class="ck-text styleguide-section-description">
+					Contextual feedback messages provide users with color coded
+					feedback.
+				</p>
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Success
+					</h3>
+					<p class="ck-context-message ck-context-message--success">
+						<strong>Well done!</strong> You successfully read this
+						important alert message.
+					</p>
+				</div>
+
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Informational
+					</h3>
+					<p
+						class="ck-context-message ck-context-message--informational"
+					>
+						<strong>Heads up!</strong> This alert needs your
+						attention, but it's not super important.
+					</p>
+				</div>
+
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Warning
+					</h3>
+					<p class="ck-context-message ck-context-message--warning">
+						<strong>Warning!</strong> Better check yourself, you're
+						not looking too good.
+					</p>
+				</div>
+
+				<div
+					class="styleguide-section-subsection primary-colors-subsection"
+				>
+					<h3 class="section-subsection-title">
+						Danger / Error
+					</h3>
+					<p class="ck-context-message ck-context-message--danger">
+						<strong>Oh snap!</strong> Change a few things up and try
+						submitting again.
+					</p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
