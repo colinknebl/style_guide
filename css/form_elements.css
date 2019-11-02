@@ -15,7 +15,7 @@
 .input-text-placeholder--animated {
 	font-size: 16px;
 	display: inline-block;
-	color: var(--secondary-color-grey-1);
+	color: var(--accent-color-grey-1);
 	position: absolute;
 	top: 7px;
 	left: 12px;
@@ -23,7 +23,7 @@
 	transition: transform 200ms ease-in-out;
 }
 input:valid + .input-text-placeholder--animated {
-	color: var(--primary-color-2);
+	color: var(--base-color-2);
 	transform: translate(-11px, -23px) scale(0.7);
 }
 
@@ -35,7 +35,7 @@ input:valid + .input-text-placeholder--animated {
 	left: -3px;
 	height: 20px;
 	width: 20px;
-	background-color: var(--secondary-color-silver-1);
+	background-color: var(--accent-color-silver-1);
 
 	display: flex;
 	justify-content: center;
@@ -44,12 +44,12 @@ input:valid + .input-text-placeholder--animated {
 
 .custom-input-container:hover input ~ .circle,
 .custom-input-container:hover input ~ .checkmark {
-	background-color: var(--secondary-color-grey-1);
+	background-color: var(--primary-color);
 }
 
 .custom-input-container input:checked ~ .circle,
 .custom-input-container input:checked ~ .checkmark {
-	background-color: var(--secondary-color-aqua-1);
+	background-color: var(--default-color);
 }
 
 .circle:after,
@@ -63,7 +63,7 @@ input:valid + .input-text-placeholder--animated {
 .custom-input-container input:focus ~ .circle,
 .custom-input-container input:focus ~ .checkmark {
 	outline-style: auto;
-	outline-color: var(--secondary-color-yellow-1);
+	outline-color: var(--accessory-color);
 }
 
 .custom-input-container input:checked ~ .circle:after,
@@ -86,8 +86,8 @@ input:valid + .input-text-placeholder--animated {
 	border-radius: 50%;
 }
 input {
-	border: 2px solid var(--secondary-color-aqua-1);
-	outline-color: var(--secondary-color-yellow-1);
+	border: 2px solid var(--default-color);
+	outline-color: var(--accessory-color);
 }
 
 input[type='text'] {
@@ -100,7 +100,7 @@ input[type='text'] {
 label.input-text--underline input {
 	border: 2px solid transparent;
 	border-radius: initial;
-	border-bottom-color: var(--secondary-color-aqua-1);
+	border-bottom-color: var(--default-color);
 }
 
 .input-text--square input {

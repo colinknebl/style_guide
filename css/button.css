@@ -2,17 +2,18 @@
 .ck-button {
 	border: none;
 	background: none;
-	color: var(--secondary-color-blue-1);
+	color: var(--default-button-color);
 	border-radius: var(--default-border-radius);
 	font-size: 1rem;
 	padding: 5px 10px;
 	cursor: pointer;
 	transition: all 200ms ease-in-out;
 }
+
 .ck-button:hover,
 .ck-button:active {
-	background: var(--secondary-color-blue-6);
-	color: var(--primary-color-1);
+	background: var(--on-default-button-background);
+	color: var(--on-default-button-color);
 }
 
 .ck-button--medium {
@@ -30,6 +31,10 @@
 	align-items: center;
 }
 
+.ck-button--square {
+	border-radius: initial;
+}
+
 .ck-button--icon {
 	border-radius: 50%;
 	height: 35px;
@@ -38,135 +43,115 @@
 
 /* Text buttons */
 .ck-button--text {
-	border: none;
 }
+
 .ck-button--text.ck-button--primary {
+	border: none;
 	background: none;
-	color: var(--primary-button-background);
+	color: var(--primary-button-color);
 }
 .ck-button--text.ck-button--primary:hover {
 	background: var(--primary-button-background);
-	color: var(--primary-button-color);
+	color: var(--on-primary-button-color);
 }
 
 .ck-button--text.ck-button--secondary {
 	border: none;
 	background: none;
-	color: var(--secondary-button-background);
+	color: var(--secondary-button-color);
 }
 .ck-button--text.ck-button--secondary:hover {
 	background: var(--secondary-button-background);
-	color: var(--primary-color-1);
+	color: var(--on-secondary-button-color);
 }
-
-.ck-button--text.ck-button--informational {
-	border: none;
-	background: none;
-	color: var(--informational-button-background);
-}
-.ck-button--text.ck-button--informational:hover {
-	background: var(--informational-button-background);
-	color: var(--informational-button-color);
-}
-
 .ck-button--text.ck-button--danger {
 	border: none;
 	background: none;
-	color: var(--danger-button-background);
+	color: var(--danger-button-color);
 }
 .ck-button--text.ck-button--danger:hover {
 	background: var(--danger-button-background);
-	color: var(--danger-button-color);
+	color: var(--on-danger-button-color);
 }
 
 /* Outlined Buttons */
 .ck-button--outlined {
-	border: 1px solid var(--secondary-color-blue-1);
+	border: 1px solid var(--on-default-button-background);
+	background: none;
+	color: var(--default-button-color);
+}
+
+.ck-button--outlined:hover {
+	background: var(--on-default-button-background);
+	color: var(--on-default-button-color);
 }
 
 .ck-button--outlined.ck-button--primary {
+	border: 1px solid var(--on-primary-button-background);
 	background: none;
-	color: var(--primary-button-background);
+	color: var(--primary-button-color);
 }
 .ck-button--outlined.ck-button--primary:hover {
-	background: var(--primary-button-background);
-	color: var(--primary-button-color);
+	background: var(--on-primary-button-background);
+	color: var(--on-primary-button-color);
 }
 
 .ck-button--outlined.ck-button--secondary {
-	border: 1px solid var(--secondary-button-background);
+	border: 1px solid var(--on-secondary-button-background);
 	background: none;
-	color: var(--secondary-button-background);
+	color: var(--secondary-button-color);
 }
 .ck-button--outlined.ck-button--secondary:hover {
-	background: var(--secondary-button-background);
-	color: var(--primary-color-1);
-}
-
-.ck-button--outlined.ck-button--informational {
-	border: 1px solid var(--informational-button-background);
-	background: none;
-	color: var(--informational-button-background);
-}
-.ck-button--outlined.ck-button--informational:hover {
-	background: var(--informational-button-background);
-	color: var(--informational-button-color);
+	background: var(--on-secondary-button-background);
+	color: var(--on-secondary-button-color);
 }
 
 .ck-button--outlined.ck-button--danger {
-	border: 1px solid var(--danger-button-background);
+	border: 1px solid var(--on-danger-button-background);
 	background: none;
-	color: var(--danger-button-background);
+	color: var(--danger-button-color);
 }
 .ck-button--outlined.ck-button--danger:hover {
-	background: var(--danger-button-background);
-	color: var(--danger-button-color);
+	background: var(--on-danger-button-background);
+	color: var(--on-danger-button-color);
 }
 
 /* Unelevated & Raised */
 .ck-button--unelevated,
 .ck-button--raised {
-	color: var(--primary-color-1);
-	background: var(--secondary-color-blue-1);
-	border: 1px solid var(--secondary-color-blue-1);
+	background: var(--on-default-button-background);
+	color: var(--on-default-button-color);
 }
 .ck-button--unelevated:hover,
 .ck-button--unelevated:active {
-	color: var(--secondary-color-blue-1);
-	background: var(--primary-color-1);
+	background: var(--default-button-background);
 }
 
 .ck-button--unelevated.ck-button--primary {
+	background: var(--on-primary-button-background);
+	color: var(--on-primary-button-color);
 }
 .ck-button--unelevated.ck-button--primary:hover {
-	color: var(--primary-color-1);
+	background: var(--primary-button-background);
+	color: var(--on-primary-button-color);
 }
 
 .ck-button--unelevated.ck-button--secondary {
-	border: 1px solid var(--secondary-button-background);
-	color: var(--primary-color-1);
+	background: var(--on-secondary-button-background);
+	color: var(--on-secondary-button-color);
 }
 .ck-button--unelevated.ck-button--secondary:hover {
-	background: none;
-	color: var(--secondary-button-background);
-}
-
-.ck-button--unelevated.ck-button--informational {
-	border: 1px solid var(--informational-button-background);
-	color: var(--primary-color-1);
-}
-.ck-button--unelevated.ck-button--informational:hover {
-	background: none;
-	color: var(--informational-button-background);
+	background: var(--secondary-button-background);
+	color: var(--on-secondary-button-color);
 }
 
 .ck-button--unelevated.ck-button--danger {
-	border: 1px solid var(--danger-button-background);
-	color: var(--primary-color-1);
+	background: var(--on-danger-button-background);
+	color: var(--on-danger-button-color);
 }
 .ck-button--unelevated.ck-button--danger:hover {
-	background: none;
-	color: var(--danger-button-background);
+	background: var(--danger-button-background);
+	color: var(--on-danger-button-color);
 }
 
 /* Raised Buttons */
@@ -177,7 +162,7 @@
 		0 5px 10px rgba(0, 0, 0, 0.11);
 }
 .ck-button--raised:hover {
-	background: var(--secondary-color-blue-1);
+	background: var(--on-default-button-background);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
 		0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 12px rgba(0, 0, 0, 0.11),
 		0 12px 24px rgba(0, 0, 0, 0.11);
@@ -186,66 +171,45 @@
 	box-shadow: none;
 }
 
-.ck-button--raised.ck-button--primary:hover,
-.ck-button--raised.ck-button--primary:active {
-	border: 1px solid var(--secondary-button-background);
-	background: var(--secondary-button-background);
-	color: var(--primary-color-1);
+.ck-button--raised.ck-button--primary {
+	background: var(--on-primary-button-background);
+	color: var(--on-primary-button-color);
 }
 
-.ck-button--raised.ck-button--secondary:hover,
-.ck-button--raised.ck-button--secondary:active {
-	background: var(--secondary-button-background);
-	color: var(--primary-color-1);
+.ck-button--raised.ck-button--secondary {
+	background: var(--on-secondary-button-background);
+	color: var(--on-secondary-button-color);
 }
 
-.ck-button--raised.ck-button--informational:hover,
-.ck-button--raised.ck-button--informational:active {
-	background: var(--informational-button-background);
-	color: var(--primary-color-1);
-}
-
-.ck-button--raised.ck-button--danger:hover,
-.ck-button--raised.ck-button--danger:active {
-	background: var(--danger-button-background);
-	color: var(--primary-color-1);
+.ck-button--raised.ck-button--danger {
+	background: var(--on-danger-button-background);
+	color: var(--on-danger-button-color);
 }
 
 /* Primary Buttons */
 .ck-button--primary {
+	border: var(--primary-button-background);
 	background: var(--primary-button-background);
-	color: var(--primary-button-color);
+	color: var(--base-color-1);
 }
 .ck-button--primary:hover {
 	background: var(--on-primary-button-background);
 	color: var(--on-primary-button-color);
 }
 
-/* Secondary Buttons */
+/* secondary Buttons */
 .ck-button--secondary {
-	border: var(--secondary-button-background);
-	background: var(--secondary-button-background);
-	color: var(--primary-color-1);
+	border: var(--accent-button-background);
+	background: var(--accent-button-background);
+	color: var(--accent-button-color);
 }
 .ck-button--secondary:hover {
 	background: var(--on-secondary-button-background);
 	color: var(--on-secondary-button-color);
 }
 
-/* Informational Buttons */
-.ck-button--informational {
-	border: var(--informational-button-background);
-	background: var(--informational-button-background);
-	color: var(--informational-button-color);
-}
-.ck-button--informational:hover {
-	background: var(--on-informational-button-background);
-	color: var(--on-informational-button-color);
-}
-
 /* Danger Buttons */
 .ck-button--danger {
-	border: 1px solid var(--danger-button-background);
 	background: var(--danger-button-background);
 	color: var(--danger-button-color);
 }

@@ -1,6 +1,6 @@
 /* Contextual Messages */
 .ck-context-message {
-	background: var(--secondary-color-15);
+	background: var(--accent-color-15);
 	font-size: 1rem;
 	padding: 15px;
 	border-radius: var(--default-border-radius);

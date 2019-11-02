@@ -222,13 +222,13 @@ header nav a li:hover {
 }
 
 .shades-color-subsection .colors-grid,
-.primary-colors-subsection .colors-grid {
+.base-colors-subsection .colors-grid {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
 }
 
-.primary-colors-subsection .colors-grid {
+.base-colors-subsection .colors-grid {
 	grid-template-columns: repeat(2, 1fr);
 }
 
@@ -242,23 +242,23 @@ header nav a li:hover {
 	background: grey;
 }
 
-.primary-colors-subsection .color {
+.base-colors-subsection .color {
 	border: 1px solid black;
 }
 
-.primary-1 .color {
-	background: var(--primary-color-1);
+.base-1 .color {
+	background: var(--base-color-1);
 }
-.primary-1 .color:hover {
-	background: var(--on-primary-color-1);
+.base-1 .color:hover {
+	background: var(--on-base-color-1);
 }
 
-.primary-2 {
+.base-2 {
 	color: white;
 }
 
-.primary-2 .color {
-	background: var(--primary-color-2);
+.base-2 .color {
+	background: var(--base-color-2);
 }
 
 .secondary-colors-subsection .colors-grid {
@@ -279,418 +279,418 @@ header nav a li:hover {
 	transform: scale(1.2);
 }
 .secondary-1 .color {
-	background: var(--secondary-color-navy-1);
+	background: var(--accent-color-navy-1);
 }
 .secondary-1 .label {
-	color: var(--secondary-color-navy-6);
+	color: var(--accent-color-navy-6);
 }
 
 .secondary-2 .color {
-	background: var(--secondary-color-blue-1);
+	background: var(--accent-color-blue-1);
 }
 .secondary-2 .label {
-	color: var(--secondary-color-blue-6);
+	color: var(--accent-color-blue-6);
 }
 
 .secondary-3 .color {
-	background: var(--secondary-color-aqua-1);
+	background: var(--accent-color-aqua-1);
 }
 .secondary-3 .label {
-	color: var(--secondary-color-aqua-6);
+	color: var(--accent-color-aqua-6);
 }
 
 .secondary-4 .color {
-	background: var(--secondary-color-teal-1);
+	background: var(--accent-color-teal-1);
 }
 .secondary-4 .label {
-	color: var(--secondary-color-teal-6);
+	color: var(--accent-color-teal-6);
 }
 
 .secondary-5 .color {
-	background: var(--secondary-color-olive-1);
+	background: var(--accent-color-olive-1);
 }
 .secondary-5 .label {
-	color: var(--secondary-color-olive-6);
+	color: var(--accent-color-olive-6);
 }
 
 .secondary-6 .color {
-	background: var(--secondary-color-green-1);
+	background: var(--accent-color-green-1);
 }
 .secondary-6 .label {
-	color: var(--secondary-color-green-6);
+	color: var(--accent-color-green-6);
 }
 
 .secondary-7 .color {
-	background: var(--secondary-color-lime-1);
+	background: var(--accent-color-lime-1);
 }
 .secondary-7 .label {
-	color: var(--secondary-color-lime-6);
+	color: var(--accent-color-lime-6);
 }
 
 .secondary-8 .color {
-	background: var(--secondary-color-yellow-1);
+	background: var(--accent-color-yellow-1);
 }
 .secondary-8 .label {
-	color: var(--secondary-color-yellow-6);
+	color: var(--accent-color-yellow-6);
 }
 
 .secondary-9 .color {
-	background: var(--secondary-color-orange-1);
+	background: var(--accent-color-orange-1);
 }
 .secondary-9 .label {
-	color: var(--secondary-color-orange-6);
+	color: var(--accent-color-orange-6);
 }
 
 .secondary-10 .color {
-	background: var(--secondary-color-red-1);
+	background: var(--accent-color-red-1);
 }
 .secondary-10 .label {
-	color: var(--secondary-color-red-6);
+	color: var(--accent-color-red-6);
 }
 
 .secondary-11 .color {
-	background: var(--secondary-color-maroon-1);
+	background: var(--accent-color-maroon-1);
 }
 .secondary-11 .label {
-	color: var(--secondary-color-maroon-6);
+	color: var(--accent-color-maroon-6);
 }
 
 .secondary-12 .color {
-	background: var(--secondary-color-fuchsia-1);
+	background: var(--accent-color-fuchsia-1);
 }
 .secondary-12 .label {
-	color: var(--secondary-color-fuchsia-6);
+	color: var(--accent-color-fuchsia-6);
 }
 
 .secondary-13 .color {
-	background: var(--secondary-color-purple-1);
+	background: var(--accent-color-purple-1);
 }
 .secondary-13 .label {
-	color: var(--secondary-color-purple-6);
+	color: var(--accent-color-purple-6);
 }
 
 .secondary-14 .color {
-	background: var(--secondary-color-grey-1);
+	background: var(--accent-color-grey-1);
 }
 .secondary-14 .label {
-	color: var(--secondary-color-grey-6);
+	color: var(--accent-color-grey-6);
 }
 
 .secondary-15 .color {
-	background: var(--secondary-color-silver-1);
+	background: var(--accent-color-silver-1);
 }
 .secondary-15 .label {
-	color: var(--secondary-color-silver-6);
+	color: var(--accent-color-silver-6);
 }
 
 .safety-color-subsection .color {
 	background: var(--context-color-safety);
 }
 .safety-color-subsection .label {
-	color: var(--primary-color-1);
+	color: var(--base-color-1);
 }
 
 /* color shades: navy */
 .colors-grid--small.navy .label {
-	background: var(--secondary-color-navy-6);
+	background: var(--accent-color-navy-6);
 }
 .colors-grid--small.navy div:nth-of-type(1) {
-	background: var(--secondary-color-navy-1);
+	background: var(--accent-color-navy-1);
 }
 .colors-grid--small.navy div:nth-of-type(2) {
-	background: var(--secondary-color-navy-2);
+	background: var(--accent-color-navy-2);
 }
 .colors-grid--small.navy div:nth-of-type(3) {
-	background: var(--secondary-color-navy-3);
+	background: var(--accent-color-navy-3);
 }
 .colors-grid--small.navy div:nth-of-type(4) {
-	background: var(--secondary-color-navy-4);
+	background: var(--accent-color-navy-4);
 }
 .colors-grid--small.navy div:nth-of-type(5) {
-	background: var(--secondary-color-navy-5);
+	background: var(--accent-color-navy-5);
 }
 .colors-grid--small.navy div:nth-of-type(6) {
-	background: var(--secondary-color-navy-6);
+	background: var(--accent-color-navy-6);
 }
 
 /* color shades: blue */
 .colors-grid--small.blue div:nth-of-type(1) {
-	background: var(--secondary-color-blue-1);
+	background: var(--accent-color-blue-1);
 }
 .colors-grid--small.blue div:nth-of-type(2) {
-	background: var(--secondary-color-blue-2);
+	background: var(--accent-color-blue-2);
 }
 .colors-grid--small.blue div:nth-of-type(3) {
-	background: var(--secondary-color-blue-3);
+	background: var(--accent-color-blue-3);
 }
 .colors-grid--small.blue div:nth-of-type(4) {
-	background: var(--secondary-color-blue-4);
+	background: var(--accent-color-blue-4);
 }
 .colors-grid--small.blue div:nth-of-type(5) {
-	background: var(--secondary-color-blue-5);
+	background: var(--accent-color-blue-5);
 }
 .colors-grid--small.blue div:nth-of-type(6) {
-	background: var(--secondary-color-blue-6);
+	background: var(--accent-color-blue-6);
 }
 
 /* color shades: aqua */
 .colors-grid--small.aqua div:nth-of-type(1) {
-	background: var(--secondary-color-aqua-1);
+	background: var(--accent-color-aqua-1);
 }
 .colors-grid--small.aqua div:nth-of-type(2) {
-	background: var(--secondary-color-aqua-2);
+	background: var(--accent-color-aqua-2);
 }
 .colors-grid--small.aqua div:nth-of-type(3) {
-	background: var(--secondary-color-aqua-3);
+	background: var(--accent-color-aqua-3);
 }
 .colors-grid--small.aqua div:nth-of-type(4) {
-	background: var(--secondary-color-aqua-4);
+	background: var(--accent-color-aqua-4);
 }
 .colors-grid--small.aqua div:nth-of-type(5) {
-	background: var(--secondary-color-aqua-5);
+	background: var(--accent-color-aqua-5);
 }
 .colors-grid--small.aqua div:nth-of-type(6) {
-	background: var(--secondary-color-aqua-6);
+	background: var(--accent-color-aqua-6);
 }
 
 /* color shades: teal */
 .colors-grid--small.teal div:nth-of-type(1) {
-	background: var(--secondary-color-teal-1);
+	background: var(--accent-color-teal-1);
 }
 .colors-grid--small.teal div:nth-of-type(2) {
-	background: var(--secondary-color-teal-2);
+	background: var(--accent-color-teal-2);
 }
 .colors-grid--small.teal div:nth-of-type(3) {
-	background: var(--secondary-color-teal-3);
+	background: var(--accent-color-teal-3);
 }
 .colors-grid--small.teal div:nth-of-type(4) {
-	background: var(--secondary-color-teal-4);
+	background: var(--accent-color-teal-4);
 }
 .colors-grid--small.teal div:nth-of-type(5) {
-	background: var(--secondary-color-teal-5);
+	background: var(--accent-color-teal-5);
 }
 .colors-grid--small.teal div:nth-of-type(6) {
-	background: var(--secondary-color-teal-6);
+	background: var(--accent-color-teal-6);
 }
 
 /* color shades: olive */
 .colors-grid--small.olive div:nth-of-type(1) {
-	background: var(--secondary-color-olive-1);
+	background: var(--accent-color-olive-1);
 }
 .colors-grid--small.olive div:nth-of-type(2) {
-	background: var(--secondary-color-olive-2);
+	background: var(--accent-color-olive-2);
 }
 .colors-grid--small.olive div:nth-of-type(3) {
-	background: var(--secondary-color-olive-3);
+	background: var(--accent-color-olive-3);
 }
 .colors-grid--small.olive div:nth-of-type(4) {
-	background: var(--secondary-color-olive-4);
+	background: var(--accent-color-olive-4);
 }
 .colors-grid--small.olive div:nth-of-type(5) {
-	background: var(--secondary-color-olive-5);
+	background: var(--accent-color-olive-5);
 }
 .colors-grid--small.olive div:nth-of-type(6) {
-	background: var(--secondary-color-olive-6);
+	background: var(--accent-color-olive-6);
 }
 
 /* color shades: green */
 .colors-grid--small.green div:nth-of-type(1) {
-	background: var(--secondary-color-green-1);
+	background: var(--accent-color-green-1);
 }
 .colors-grid--small.green div:nth-of-type(2) {
-	background: var(--secondary-color-green-2);
+	background: var(--accent-color-green-2);
 }
 .colors-grid--small.green div:nth-of-type(3) {
-	background: var(--secondary-color-green-3);
+	background: var(--accent-color-green-3);
 }
 .colors-grid--small.green div:nth-of-type(4) {
-	background: var(--secondary-color-green-4);
+	background: var(--accent-color-green-4);
 }
 .colors-grid--small.green div:nth-of-type(5) {
-	background: var(--secondary-color-green-5);
+	background: var(--accent-color-green-5);
 }
 .colors-grid--small.green div:nth-of-type(6) {
-	background: var(--secondary-color-green-6);
+	background: var(--accent-color-green-6);
 }
 
 /* color shades: lime */
 .colors-grid--small.lime div:nth-of-type(1) {
-	background: var(--secondary-color-lime-1);
+	background: var(--accent-color-lime-1);
 }
 .colors-grid--small.lime div:nth-of-type(2) {
-	background: var(--secondary-color-lime-2);
+	background: var(--accent-color-lime-2);
 }
 .colors-grid--small.lime div:nth-of-type(3) {
-	background: var(--secondary-color-lime-3);
+	background: var(--accent-color-lime-3);
 }
 .colors-grid--small.lime div:nth-of-type(4) {
-	background: var(--secondary-color-lime-4);
+	background: var(--accent-color-lime-4);
 }
 .colors-grid--small.lime div:nth-of-type(5) {
-	background: var(--secondary-color-lime-5);
+	background: var(--accent-color-lime-5);
 }
 .colors-grid--small.lime div:nth-of-type(6) {
-	background: var(--secondary-color-lime-6);
+	background: var(--accent-color-lime-6);
 }
 
 /* color shades: yellow */
 .colors-grid--small.yellow div:nth-of-type(1) {
-	background: var(--secondary-color-yellow-1);
+	background: var(--accent-color-yellow-1);
 }
 .colors-grid--small.yellow div:nth-of-type(2) {
-	background: var(--secondary-color-yellow-2);
+	background: var(--accent-color-yellow-2);
 }
 .colors-grid--small.yellow div:nth-of-type(3) {
-	background: var(--secondary-color-yellow-3);
+	background: var(--accent-color-yellow-3);
 }
 .colors-grid--small.yellow div:nth-of-type(4) {
-	background: var(--secondary-color-yellow-4);
+	background: var(--accent-color-yellow-4);
 }
 .colors-grid--small.yellow div:nth-of-type(5) {
-	background: var(--secondary-color-yellow-5);
+	background: var(--accent-color-yellow-5);
 }
 .colors-grid--small.yellow div:nth-of-type(6) {
-	background: var(--secondary-color-yellow-6);
+	background: var(--accent-color-yellow-6);
 }
 
 /* color shades: orange */
 .colors-grid--small.orange div:nth-of-type(1) {
-	background: var(--secondary-color-orange-1);
+	background: var(--accent-color-orange-1);
 }
 .colors-grid--small.orange div:nth-of-type(2) {
-	background: var(--secondary-color-orange-2);
+	background: var(--accent-color-orange-2);
 }
 .colors-grid--small.orange div:nth-of-type(3) {
-	background: var(--secondary-color-orange-3);
+	background: var(--accent-color-orange-3);
 }
 .colors-grid--small.orange div:nth-of-type(4) {
-	background: var(--secondary-color-orange-4);
+	background: var(--accent-color-orange-4);
 }
 .colors-grid--small.orange div:nth-of-type(5) {
-	background: var(--secondary-color-orange-5);
+	background: var(--accent-color-orange-5);
 }
 .colors-grid--small.orange div:nth-of-type(6) {
-	background: var(--secondary-color-orange-6);
+	background: var(--accent-color-orange-6);
 }
 
 /* color shades: red */
 .colors-grid--small.red div:nth-of-type(1) {
-	background: var(--secondary-color-red-1);
+	background: var(--accent-color-red-1);
 }
 .colors-grid--small.red div:nth-of-type(2) {
-	background: var(--secondary-color-red-2);
+	background: var(--accent-color-red-2);
 }
 .colors-grid--small.red div:nth-of-type(3) {
-	background: var(--secondary-color-red-3);
+	background: var(--accent-color-red-3);
 }
 .colors-grid--small.red div:nth-of-type(4) {
-	background: var(--secondary-color-red-4);
+	background: var(--accent-color-red-4);
 }
 .colors-grid--small.red div:nth-of-type(5) {
-	background: var(--secondary-color-red-5);
+	background: var(--accent-color-red-5);
 }
 .colors-grid--small.red div:nth-of-type(6) {
-	background: var(--secondary-color-red-6);
+	background: var(--accent-color-red-6);
 }
 
 /* color shades: maroon */
 .colors-grid--small.maroon div:nth-of-type(1) {
-	background: var(--secondary-color-maroon-1);
+	background: var(--accent-color-maroon-1);
 }
 .colors-grid--small.maroon div:nth-of-type(2) {
-	background: var(--secondary-color-maroon-2);
+	background: var(--accent-color-maroon-2);
 }
 .colors-grid--small.maroon div:nth-of-type(3) {
-	background: var(--secondary-color-maroon-3);
+	background: var(--accent-color-maroon-3);
 }
 .colors-grid--small.maroon div:nth-of-type(4) {
-	background: var(--secondary-color-maroon-4);
+	background: var(--accent-color-maroon-4);
 }
 .colors-grid--small.maroon div:nth-of-type(5) {
-	background: var(--secondary-color-maroon-5);
+	background: var(--accent-color-maroon-5);
 }
 .colors-grid--small.maroon div:nth-of-type(6) {
-	background: var(--secondary-color-maroon-6);
+	background: var(--accent-color-maroon-6);
 }
 
 /* color shades: fuchsia */
 .colors-grid--small.fuchsia div:nth-of-type(1) {
-	background: var(--secondary-color-fuchsia-1);
+	background: var(--accent-color-fuchsia-1);
 }
 .colors-grid--small.fuchsia div:nth-of-type(2) {
-	background: var(--secondary-color-fuchsia-2);
+	background: var(--accent-color-fuchsia-2);
 }
 .colors-grid--small.fuchsia div:nth-of-type(3) {
-	background: var(--secondary-color-fuchsia-3);
+	background: var(--accent-color-fuchsia-3);
 }
 .colors-grid--small.fuchsia div:nth-of-type(4) {
-	background: var(--secondary-color-fuchsia-4);
+	background: var(--accent-color-fuchsia-4);
 }
 .colors-grid--small.fuchsia div:nth-of-type(5) {
-	background: var(--secondary-color-fuchsia-5);
+	background: var(--accent-color-fuchsia-5);
 }
 .colors-grid--small.fuchsia div:nth-of-type(6) {
-	background: var(--secondary-color-fuchsia-6);
+	background: var(--accent-color-fuchsia-6);
 }
 
 /* color shades: purple */
 .colors-grid--small.purple div:nth-of-type(1) {
-	background: var(--secondary-color-purple-1);
+	background: var(--accent-color-purple-1);
 }
 .colors-grid--small.purple div:nth-of-type(2) {
-	background: var(--secondary-color-purple-2);
+	background: var(--accent-color-purple-2);
 }
 .colors-grid--small.purple div:nth-of-type(3) {
-	background: var(--secondary-color-purple-3);
+	background: var(--accent-color-purple-3);
 }
 .colors-grid--small.purple div:nth-of-type(4) {
-	background: var(--secondary-color-purple-4);
+	background: var(--accent-color-purple-4);
 }
 .colors-grid--small.purple div:nth-of-type(5) {
-	background: var(--secondary-color-purple-5);
+	background: var(--accent-color-purple-5);
 }
 .colors-grid--small.purple div:nth-of-type(6) {
-	background: var(--secondary-color-purple-6);
+	background: var(--accent-color-purple-6);
 }
 
 /* color shades: grey */
 .colors-grid--small.grey div:nth-of-type(1) {
-	background: var(--secondary-color-grey-1);
+	background: var(--accent-color-grey-1);
 }
 .colors-grid--small.grey div:nth-of-type(2) {
-	background: var(--secondary-color-grey-2);
+	background: var(--accent-color-grey-2);
 }
 .colors-grid--small.grey div:nth-of-type(3) {
-	background: var(--secondary-color-grey-3);
+	background: var(--accent-color-grey-3);
 }
 .colors-grid--small.grey div:nth-of-type(4) {
-	background: var(--secondary-color-grey-4);
+	background: var(--accent-color-grey-4);
 }
 .colors-grid--small.grey div:nth-of-type(5) {
-	background: var(--secondary-color-grey-5);
+	background: var(--accent-color-grey-5);
 }
 .colors-grid--small.grey div:nth-of-type(6) {
-	background: var(--secondary-color-grey-6);
+	background: var(--accent-color-grey-6);
 }
 
 /* color shades: silver */
 .colors-grid--small.silver div:nth-of-type(1) {
-	background: var(--secondary-color-silver-1);
+	background: var(--accent-color-silver-1);
 }
 .colors-grid--small.silver div:nth-of-type(2) {
-	background: var(--secondary-color-silver-2);
+	background: var(--accent-color-silver-2);
 }
 .colors-grid--small.silver div:nth-of-type(3) {
-	background: var(--secondary-color-silver-3);
+	background: var(--accent-color-silver-3);
 }
 .colors-grid--small.silver div:nth-of-type(4) {
-	background: var(--secondary-color-silver-4);
+	background: var(--accent-color-silver-4);
 }
 .colors-grid--small.silver div:nth-of-type(5) {
-	background: var(--secondary-color-silver-5);
+	background: var(--accent-color-silver-5);
 }
 .colors-grid--small.silver div:nth-of-type(6) {
-	background: var(--secondary-color-silver-6);
+	background: var(--accent-color-silver-6);
 }
 
 /* Buttons */
