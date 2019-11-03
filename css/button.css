@@ -51,7 +51,7 @@
 	color: var(--primary-button-color);
 }
 .ck-button--text.ck-button--primary:hover {
-	background: var(--primary-button-background);
+	background: var(--on-primary-button-background);
 	color: var(--on-primary-button-color);
 }
 
@@ -61,7 +61,7 @@
 	color: var(--secondary-button-color);
 }
 .ck-button--text.ck-button--secondary:hover {
-	background: var(--secondary-button-background);
+	background: var(--on-secondary-button-background);
 	color: var(--on-secondary-button-color);
 }
 .ck-button--text.ck-button--danger {
@@ -70,7 +70,7 @@
 	color: var(--danger-button-color);
 }
 .ck-button--text.ck-button--danger:hover {
-	background: var(--danger-button-background);
+	background: var(--on-danger-button-background);
 	color: var(--on-danger-button-color);
 }
 
